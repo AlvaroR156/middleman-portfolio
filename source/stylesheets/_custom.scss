@@ -1,0 +1,27 @@
+/*
+  any variables and settings should be defined here,
+  like colors for instance
+*/
+
+body {
+  background: #fff;
+  text-align: center;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.window_panel {
+  background-image: $window_title_img;
+  background-position: 100% 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  padding-top: 3.2%;
+  @include breakpoint(large) {
+    padding-top: 2.7%;
+  }
+}
+
+.lionbox {
+  background: $lionbox;
+}
