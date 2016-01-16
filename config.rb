@@ -75,7 +75,7 @@ set :images_dir, 'images'
 
 ignore "bower_components/*"
 
-ignore "javascripts/app.js"
+# ignore "javascripts/app.js"
 
 ignore "javascripts/script.js"
 

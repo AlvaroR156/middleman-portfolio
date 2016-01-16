@@ -4,3 +4,5 @@
 
 //= require app
 //= require script
+
+console.log("Hello!!!");
