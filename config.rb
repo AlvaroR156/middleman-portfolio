@@ -5,6 +5,7 @@
 # Change Compass configuration
 compass_config do |config|
   config.add_import_path "bower_components/foundation-sites/scss/"
+  config.add_import_path "bower_components/"
   config.output_style = :compact
 
   # Set this to the root of your project when deployed:
@@ -73,11 +74,23 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-ignore "bower_components/*"
+# ignore "bower_components/*"
 
 # ignore "javascripts/app.js"
 
-ignore "javascripts/script.js"
+# ignore "javascripts/script.js"
+
+
+set :relative_links, true
+
+
+
+
+# Add bower's directory to sprockets asset path
+# after_configuration do
+#   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+#   sprockets.append_path File.join "#{root}", @bower_config["directory"]
+# end
 
 # Build-specific configuration
 configure :build do
