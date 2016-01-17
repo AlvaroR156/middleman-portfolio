@@ -6,3 +6,17 @@
 $marginTopBody: 80px;
 $window_title_img: image-url('images/toolbar2.png');
 $lionbox: #ECC561 !default;
+
+/// Background color for the top bar. This color also cascades to menus within the top bar.
+/// @type Color
+$topbar-background: $light-gray !default;
+
+/// Color for links inside a top bar menu.
+/// @type Color
+$topbar-link-color: $primary-color !default;
+
+/// Width of `<input>` elements inside the top bar.
+/// @type Number
+$topbar-input-width: 200px !default;
+
+$topbar-background: #ECC561 !default;

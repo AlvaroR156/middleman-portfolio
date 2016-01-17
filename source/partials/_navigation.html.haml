@@ -1,26 +1,55 @@
-.title-bar{"data-hide-for" => "medium", "data-responsive-toggle" => "example-menu"}
-  %button.menu-icon{"data-toggle" => "", :type => "button"}
-  .title-bar-title Menu
-#example-menu.top-bar
-  .top-bar-left
-    %ul.dropdown.menu{"data-dropdown-menu" => ""}
-      %li.menu-text Site Title
-      %li.has-submenu
-        %a{:href => "#"} One
-        %ul.submenu.menu.vertical{"data-submenu" => ""}
-          %li
-            %a{:href => "#"} One
-          %li
-            %a{:href => "#"} Two
-          %li
-            %a{:href => "#"} Three
-      %li
-        %a{:href => "#"} Two
-      %li
-        %a{:href => "#"} Three
-  .top-bar-right
-    %ul.menu
-      %li
-        %input{:placeholder => "Search", :type => "search"}/
-      %li
-        %button.button{:type => "button"} Search
+/ .top-bar
+/   .top-bar-left
+/     %ul.dropdown.menu{"data-dropdown-menu" => ""}
+/       %li.menu-text Site Title
+/       %li.has-submenu
+/         %a{:href => "#"} One
+/         %ul.submenu.menu.vertical{"data-submenu" => ""}
+/           %li
+/             %a{:href => "#"} One
+/           %li
+/             %a{:href => "#"} Two
+/           %li
+/             %a{:href => "#"} Three
+/       %li
+/         %a{:href => "#"} Two
+/       %li
+/         %a{:href => "#"} Three
+/   .top-bar-right
+/     %ul.menu
+/       %li
+/         %input{:placeholder => "Search", :type => "search"}/
+/       %li
+/         %button.button{:type => "button"} Search
+
+/ .title-bar
+/   .title-bar-left
+/     %span.title-bar-title Foundation
+/   .title-bar-right
+/     %button.menu-icon{:type => "button"}
+
+/ %nav.top-bar{"data-topbar" => "", :role => "navigation"}
+/   %ul.title-area
+/     %li.name
+/       %h1
+/         %a{:href => "#"} My Site
+/     / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+/     %li.toggle-topbar.menu-icon
+/       %a{:href => "#"}
+/         %span Menu
+/   %section.top-bar-section
+/     / Right Nav Section
+/     %ul.right
+/       %li.active
+/         %a{:href => "#"} Right Button Active
+/       %li.has-dropdown
+/         %a{:href => "#"} Right Button Dropdown
+/         %ul.dropdown
+/           %li
+/             %a{:href => "#"} First link in dropdown
+/           %li.active
+/             %a{:href => "#"} Active link in dropdown
+/     / Left Nav Section
+/     %ul.left
+/       %li
+/         %a{:href => "#"} Left Nav Button
